@@ -1,0 +1,130 @@
+/*全屏页面*/
+html,body{
+    height: 100%;
+    /*body 背景值默认占满整屏*/
+}
+body{
+    min-width: 320px;
+}
+/*顶部通栏*/
+.jd_topBar{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #e0e0e0;
+    background: url("../images/header-bg.png") repeat-x ;
+    background-size: 1px 44px;
+    position: absolute;
+}
+.jd_topBar [class^="icon_"]{
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    padding: 12px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.jd_topBar .icon_back{
+    left: 0;
+    background-position:-20px 0;
+}
+.jd_topBar .icon_menu{
+    right: 0;
+    background-position:-60px 0;
+}
+.jd_topBar form{
+    width: 100%;
+    padding:  0 40px;
+}
+.jd_topBar form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 7px;
+}
+
+/*分类主体  高度自适应的盒子*/
+.jd_category{
+    height: 100%;
+    padding-top: 45px;
+    overflow: hidden;
+}
+
+.jd_category_left{
+    height: 100%;
+    width: 90px;
+    float: left;/*两栏自适应*/
+}
+.jd_category_left ul{
+    width: 100%;
+}
+.jd_category_left ul li{
+    height: 50px;
+    width: 100%;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #f3f4f6;
+    text-align: center;
+    line-height: 50px;
+}
+.jd_category_left ul li.now{
+    background: #fff;
+    border-right: none;
+}
+.jd_category_left ul li.now a{
+    color: #d8505c;
+}
+
+
+.jd_category_right{
+    height: 100%;
+    overflow: hidden;/*两栏自适应*/
+}
+
+.jd_category_right_con{
+    padding: 0 10px;
+/*    height: 100%;
+    overflow-y: scroll;*/
+}
+.jd_category_right_con .banner{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+.jd_category_right_con .banner img{
+    width: 100%;
+    display: block;
+}
+.jd_category_right_con .hot{
+    width: 100%;
+}
+
+.jd_category_right_con .hot h3{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.jd_category_right_con .hot ul{
+    width: 100%;
+
+}
+.jd_category_right_con .hot ul li{
+    width: 33.33333%;
+    float: left;
+}
+.jd_category_right_con .hot ul li a{
+    display: block;
+    width: 100%;
+}
+.jd_category_right_con .hot ul li a img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+.jd_category_right_con .hot ul li a p{
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #666;
+}
